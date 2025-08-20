@@ -2,9 +2,9 @@ name: CI/CD React App
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: write  
@@ -45,4 +45,8 @@ jobs:
           git config --global user.name "MACHARAMPRANEETH"
           git config --global user.email "mpraneeth078@gmail.com"
           npm install -g gh-pages
+<<<<<<< HEAD
           gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/MACHARAMPRANEETH/reactcicd.git
+=======
+          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/MACHARAMPRANEETH/reactcicd.git
+>>>>>>> d12692e7f6c43a89bf76895b96c61aa597e6980b
